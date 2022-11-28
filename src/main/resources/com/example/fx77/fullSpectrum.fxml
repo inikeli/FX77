@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx77.FullSpectrumController">
+    <children>
+        <LineChart fx:id="chart" layoutX="66.0" layoutY="95.0" mouseTransparent="true" opacity="0.85" prefHeight="461.0" prefWidth="769.0" style="-fx-background-color: #F0FFF0; -fx-background-radius: 15;" title="Raman spectrum" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="95.0">
+            <xAxis>
+                <NumberAxis label="Raman Shift(cm-1)" side="BOTTOM" tickLabelFill="#6e2896" fx:id="xAxis">
+                    <tickLabelFont>
+                        <Font name="Times New Roman" size="10.0" />
+                    </tickLabelFont></NumberAxis>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="Count" label="Count" side="LEFT" tickLabelFill="#6e2896">
+                    <tickLabelFont>
+                        <Font name="Times New Roman" size="10.0" />
+                    </tickLabelFont></NumberAxis>
+            </yAxis>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </LineChart>
+    </children>
+</AnchorPane>

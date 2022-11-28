@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx77.SmoothingController">
+    <children>
+        <LineChart fx:id="chart" layoutX="66.0" layoutY="95.0" mouseTransparent="true" opacity="0.85" prefHeight="461.0" prefWidth="769.0" style="-fx-background-color: #F0FFF0; -fx-background-radius: 15;" title="Raman spectrum(smoothing)" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="95.0">
+            <xAxis>
+                <NumberAxis label="Raman Shift(cm-1)" side="BOTTOM" tickLabelFill="#6e2896" fx:id="xAxis">
+                    <tickLabelFont>
+                        <Font name="Times New Roman" size="10.0" />
+                    </tickLabelFont></NumberAxis>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="Count" label="Count" side="LEFT" tickLabelFill="#6e2896">
+                    <tickLabelFont>
+                        <Font name="Times New Roman" size="10.0" />
+                    </tickLabelFont></NumberAxis>
+            </yAxis>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </LineChart>
+        <Button fx:id="language" layoutX="819.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: #F0FFF0; -fx-background-radius: 8;" text="ENG/RU" textFill="#6e2896" AnchorPane.rightAnchor="14.599999999999994">
+            <font>
+                <Font name="Times New Roman" size="13.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="imagelaziness" fitHeight="366.0" fitWidth="402.0" layoutX="271.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/454c0fe2e8847c99ea920cc82efcbb55.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="207.0" layoutY="126.0" prefHeight="102.0" prefWidth="486.0" text="Ведутся жабьи работы..." textFill="#165b1c">
+            <font>
+                <Font name="Times New Roman" size="42.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
